@@ -1,0 +1,28 @@
+{
+  "name": "asincronismo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "callback" : "node src/callback/challenge.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arleyguerrero70/Asincronismo.git"
+  },
+  "keywords": [
+    "javascript",
+    "asincronism",
+    "es6"
+  ],
+  "author": "Arley Guerrero",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arleyguerrero70/Asincronismo/issues"
+  },
+  "homepage": "https://github.com/arleyguerrero70/Asincronismo#readme",
+  "dependencies": {
+    "xmlhttprequest": "^1.8.0"
+  }
+}
