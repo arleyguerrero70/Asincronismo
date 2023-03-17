@@ -1,0 +1,53 @@
+body{
+    background-color: #333;
+    max-width: 1280px;
+    margin: auto;
+}
+h1{
+    color: #fff;
+}
+.heroText{
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+}
+.heroText a{
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    color: #fbca67;
+    cursor: pointer;
+}
+.titulo{
+    color: #fff;
+    font-style: italic;
+    font-size: .9rem;
+}
+.descriptionText{
+    font-family: 'Nunito', sans-serif;
+    color: #fff;
+}
+.subtitle,
+.contact{
+    color: #fff;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+}
+.imageHero{
+    aspect-ratio: 2/3;
+    height: 320px;
+}
+
+@media screen and (min-width: 48rem) {
+    .descriptionText{
+        margin-right: 5rem;
+    }
+    .imageHero{
+        aspect-ratio: 2/1;
+        height: 720px;
+    }
+}
+
+@media screen and (min-width: 64rem) {
+    .imageHero{
+        height: 620px;
+    }
+}
