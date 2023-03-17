@@ -24,5 +24,6 @@
   "homepage": "https://github.com/arleyguerrero70/Asincronismo#readme",
   "dependencies": {
     "xmlhttprequest": "^1.8.0"
-  }
+  },
+  "type": "module"
 }
