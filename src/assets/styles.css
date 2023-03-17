@@ -31,23 +31,51 @@ h1{
     font-size: 1.5rem;
     line-height: 1.75rem;
 }
+.subtitle{
+    color: #00edff;
+}
+.sizeImg{
+    height: 7rem;
+}
 .imageHero{
     aspect-ratio: 2/3;
     height: 320px;
 }
+.footer{
+    background-color: #3a3a3a;
+    border-radius:1px 1px 8px 8px;
+}
+.containerVideos{
+
+}
+.sectionVideos{
+    border: 2px solid #00edff;
+}
+.textVideo{
+    font-family: 'Nunito', sans-serif !important;
+    text-align: center;
+    color: #00edff;
+    font-weight: 500;
+}
 
 @media screen and (min-width: 48rem) {
     .descriptionText{
-        margin-right: 5rem;
+        margin-right: 5rem !important;
     }
     .imageHero{
         aspect-ratio: 2/1;
         height: 720px;
+    }
+    .sizeImg{
+        height: 10rem;
     }
 }
 
 @media screen and (min-width: 64rem) {
     .imageHero{
         height: 620px;
+    }
+    .sizeImg{
+        height: 12rem;
     }
 }
