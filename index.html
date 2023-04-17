@@ -11,6 +11,32 @@
 </head>
 
 <body class="m-auto">
+  <script>
+    window.fbAsyncInit = function() {
+      FB.init({
+        appId      : '766237051528317',
+        xfbml      : true,
+        version    : 'v16.0'
+      });
+      FB.AppEvents.logPageView();
+    };
+
+    (function(d, s, id){
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) {return;}
+      js = d.createElement(s); js.id = id;
+      js.src = "https://connect.facebook.net/en_US/sdk.js";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
+  <div
+  class="fb-like"
+  data-share="true"
+  data-width="450"
+  data-show-faces="true">
+</div>
+
+
   <div class="relative overflow-hidden">
     <div class="max-w-7xl mx-auto">
       <div class="relative z-10 pb-8 sm:pb-16 md:pb-12 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
