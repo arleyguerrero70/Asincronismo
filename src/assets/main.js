@@ -21,15 +21,20 @@ async function fetchData(urlApi){
         const videos = await fetchData(API)
         let view = `
             ${videos.items.map(video => `
-                <div class="containerVideos group relative">
-                    <a href="https://youtube.com/watch?v=${video.id.videoId}" target="_blank">
-                        <div class="sectionVideos w-full aspect-w-1 aspect-h-1 rounded-md overflow-hidden group-hover:opacity-75 lg:aspect-none">
-                            <img src="${video.snippet.thumbnails.high.url}" alt="${video.snippet.description}" class="w-full">
+                <div class="contentVideosYoutube">
+                    <a class="videosYoutubeCta" href="https://youtube.com/watch?v=${video.id.videoId}" target="_blank">
+                        <div class="sectionVideos">
+                            <figure class="figureImgYoutube">
+                                <img src="${video.snippet.thumbnails.high.url}" alt="${video.snippet.description}" class="imgInstagram coverImg">
+                            </figure>
                         </div>
-                        <div class="mt-4 flex justify-between">
+                        <div class="titleVideosYoutube">
+                            <figure class="iconYoutube">
+                                <img src="./src/img/youtube.svg">
+                            </figure>
                             <h3 class="textVideo">
-                                <span aria-hidden="true" class="absolute inset-0"></span>
-                            ${video.snippet.title}
+                                <span aria-hidden="true" class="overflowEllipsis"></span>
+                                ${video.snippet.title}
                             </h3>
                         </div>
                     </a>

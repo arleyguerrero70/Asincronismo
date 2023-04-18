@@ -32,7 +32,7 @@ h1{
     line-height: 1.75rem;
 }
 .subtitle{
-    color: #00edff;
+    color: #fff;
 }
 .sizeImg{
     height: 7rem;
@@ -46,13 +46,19 @@ h1{
     border-radius:1px 1px 8px 8px;
 }
 .sectionVideos{
-    border: 2px solid #00edff;
+    border-radius: 6px;
+}
+.titleVideosYoutube{
+    padding: .75rem 0 .5rem 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 .textVideo{
     font-family: 'Nunito', sans-serif !important;
-    text-align: center;
-    color: #00edff;
-    font-weight: 500;
+    text-align: left;
+    color: #fff;
+    font-size: .75rem;
 }
 .containerFacebookVideos{
     width: 100%;
@@ -65,6 +71,15 @@ h1{
     position: relative;
     height: 270px;
     width: 270px;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.50);
+    cursor: pointer;
+}
+.figureImgYoutube{
+    position: relative;
+    height: 180px;
+    width: 240px;
     overflow: hidden;
     border-radius: 6px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.50);
@@ -84,11 +99,12 @@ h1{
     bottom: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(31, 1, 1, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     transition: all 500ms ease-out;
     opacity: 0;
     text-align: center;
     visibility: hidden;
+    padding: .5rem;
 }
 .containerImgInstagram:hover .imgTextCTA{
     opacity: 1;
@@ -96,6 +112,7 @@ h1{
 }
 .imgTextCTA h3{
     color: #fff;
+    font-weight: bold;
 }
 .iconsInstagram {
     display: flex;
@@ -127,6 +144,7 @@ h1{
 .slidePost{
     display: flex;
     justify-content: flex-start;
+    align-items: flex-start;
     overflow: auto;
     overflow-y: hidden;
     gap: .5rem;
@@ -145,6 +163,10 @@ h1{
     object-position: top;
 }
 
+.iconYoutube{
+    width: 80px;
+}
+
 @media screen and (min-width: 48rem) {
     .descriptionText{
         margin-right: 5rem !important;
@@ -156,6 +178,12 @@ h1{
     .sizeImg{
         height: 10rem;
     }
+    .slidePost{
+        gap: 0 1.25rem;
+    }
+    .contentVideosInstagram{
+        max-width: 270px;
+    }
 }
 
 @media screen and (min-width: 64rem) {
@@ -164,5 +192,8 @@ h1{
     }
     .sizeImg{
         height: 12rem;
+    }
+    .slidePost{
+        justify-content: space-around;
     }
 }
