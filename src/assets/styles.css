@@ -171,7 +171,63 @@ h1{
     width: 270px;
     margin: auto;
 }
-
+.containerTiktok{
+    position: relative;
+    width: 250px;
+    height: auto;
+}
+.tiktokAbsolute{
+    position: absolute;
+    color: #fff;
+    margin: 0 0 0 1.75rem ;
+    display: flex;
+}
+.imgTiktok{
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+    object-fit: fill;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.locationTiktok{
+    display: flex;
+    align-items: center;
+    bottom: 75px;
+    background-color: gray;
+    padding: 0.25rem 0.5rem;
+    border-radius: 12px;
+    opacity: 0.8;
+    font-size: 12px;
+}
+.usernameTiktok{
+    bottom: 50px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.soundTiktok{
+    bottom: 12px;
+    font-size: 12px;
+}
+.contentImgUserTiktok{
+    bottom: 50px;
+    right: 12px;
+    width: 60px;
+}
+.iconLocation{
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+    margin: 0 0.25rem 0 0;
+}
+.iconImgUserTiktok{
+    border-radius: 50%;
+    border: 4px solid #3c3f43;
+}
+.hashtagTiktok{
+    bottom: 32px;
+    font-size: 12px;
+}
 @media screen and (min-width: 48rem) {
     .descriptionText{
         margin-right: 5rem !important;
