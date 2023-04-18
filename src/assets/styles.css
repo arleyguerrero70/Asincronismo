@@ -46,6 +46,8 @@ h1{
     border-radius:1px 1px 8px 8px;
 }
 .sectionVideos{
+    display: flex;
+    justify-content: center;
     border-radius: 6px;
 }
 .titleVideosYoutube{
@@ -162,9 +164,12 @@ h1{
 .coverImgPositionTop{
     object-position: top;
 }
-
 .iconYoutube{
     width: 80px;
+}
+.contentVideosYoutube{
+    width: 270px;
+    margin: auto;
 }
 
 @media screen and (min-width: 48rem) {
