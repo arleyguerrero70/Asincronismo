@@ -45,9 +45,6 @@ h1{
     background-color: #3a3a3a;
     border-radius:1px 1px 8px 8px;
 }
-.containerVideos{
-
-}
 .sectionVideos{
     border: 2px solid #00edff;
 }
@@ -57,6 +54,89 @@ h1{
     color: #00edff;
     font-weight: 500;
 }
+.containerFacebookVideos{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+.containerImgInstagram{
+    position: relative;
+    height: 270px;
+    width: 270px;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.50);
+    cursor: pointer;
+}
+.imgInstagram{
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+    object-fit: fill;
+}
+.imgTextCTA{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(31, 1, 1, 0.5);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    text-align: center;
+    visibility: hidden;
+}
+.containerImgInstagram:hover .imgTextCTA{
+    opacity: 1;
+    visibility: visible;
+}
+.imgTextCTA h3{
+    color: #fff;
+}
+.iconsInstagram {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+    padding: .75rem 0 .5rem 0;
+}
+.commentsInstagram{
+    color: #fff;
+    font-size: .7rem;
+}
+.commentsInstagram span{
+    font-weight: bold;
+    margin: 0 .25rem 0 0;
+    font-size: .75rem;
+}
+.textCommentsInstagram{
+    position: relative;
+}
+.usernameInstagram{
+    width: 90%;
+}
+.iconLike{
+    position: absolute;
+    right: 0;
+    bottom: 50%;
+}
+.slidePost{
+    display: flex;
+    justify-content: flex-start;
+    overflow: auto;
+    overflow-y: hidden;
+    gap: .5rem;
+    padding: 1rem 0;
+    margin: 0;
+}
+.containerIconsCommentsInstagram{
+    width: 100%;
+}
+
 
 @media screen and (min-width: 48rem) {
     .descriptionText{

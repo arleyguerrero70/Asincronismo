@@ -11,104 +11,249 @@
 </head>
 
 <body class="m-auto">
-  <script>
-    window.fbAsyncInit = function() {
-      FB.init({
-        appId      : '766237051528317',
-        xfbml      : true,
-        version    : 'v16.0'
-      });
-      FB.AppEvents.logPageView();
-    };
-
-    (function(d, s, id){
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) {return;}
-      js = d.createElement(s); js.id = id;
-      js.src = "https://connect.facebook.net/en_US/sdk.js";
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-  </script>
-  <div
-  class="fb-like"
-  data-share="true"
-  data-width="450"
-  data-show-faces="true">
-</div>
-
-
-  <div class="relative overflow-hidden">
-    <div class="max-w-7xl mx-auto">
-      <div class="relative z-10 pb-8 sm:pb-16 md:pb-12 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
-        <svg class="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2"
-          fill="currentColor" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
-          <polygon points="20,0 60,0 40,100 0,100" />
-        </svg>
-        <div>
-          <div class="relative pt-2 sm:pt-4 px-4 sm:px-4 lg:px-8">
-            <nav class="relative flex items-center justify-center sm:h-20 lg:justify-start" aria-label="Global">
-              <div class="flex items-center flex-shrink-0 lg:flex-grow-0">
-                <div class="flex items-center justify-center w-full md:w-auto">
-                  <a href="#">
-                    <img class="sizeImg w-auto" src="./src/img/logo.png">
-                  </a>
+    <!-- <div class="relative overflow-hidden">
+        <div class="max-w-7xl mx-auto">
+        <div class="relative z-10 pb-8 sm:pb-16 md:pb-12 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
+            <svg class="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2"
+            fill="currentColor" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+            <polygon points="20,0 60,0 40,100 0,100" />
+            </svg>
+            <div>
+            <div class="relative pt-2 sm:pt-4 px-4 sm:px-4 lg:px-8">
+                <nav class="relative flex items-center justify-center sm:h-20 lg:justify-start" aria-label="Global">
+                <div class="flex items-center flex-shrink-0 lg:flex-grow-0">
+                    <div class="flex items-center justify-center w-full md:w-auto">
+                    <a href="#">
+                        <img class="sizeImg w-auto" src="./src/img/logo.png">
+                    </a>
+                    </div>
                 </div>
-              </div>
-            </nav>
+                </nav>
+            </div>
+            </div>
+
+            <main class="mt-0 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-8 lg:mt-20 lg:px-8 xl:mt-28">
+            <div class="sm:text-center lg:text-left">
+                <h1 class="text-4xl tracking-tight font-extrabold">
+                <span class="heroText block xl:inline">¡Hola👋 soy<br>
+                    <a class="sm:text-5xl md:text-6xl" href="https://www.instagram.com/sebastian_velasquez0/" target="_blank">Sebastian Velasquez</a></span>
+                </h1>
+                <h2 class="titulo font-extrabold">Profesor de <span class="typed"></span></h2>
+                <p
+                class="descriptionText mt-3 text-base sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
+                Como músico tengo más de 18 años de experiencia en escenarios en todo el país.<br>
+                He participando en 22 festivales en categorias infantil, juvenil, aficionado y profesional.</p>
+            </div>
+            </main>
+        </div>
+        </div>
+        <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
+        <img class="imageHero w-full object-cover"
+            src="./src/img/profile.jpg" alt="">
+        </div>
+    </div>
+    <div class="containerYoutubeVideos">
+        <div class="max-w-2xl mx-auto py-8 px-4 sm:py-16 sm:px-6 lg:max-w-7xl lg:px-8">
+            <h2 class="subtitle text-2xl font-extrabold tracking-tight">Te invito a ver mis últimos videos</h2>
+            <div class="mt-6 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8" id="content">
+            </div>
+        </div>
+    </div> -->
+    <div class="containerInstagramVideos">
+        <div class="max-w-2xl mx-auto py-8 px-4 sm:py-16 sm:px-6 lg:max-w-7xl lg:px-8">
+          <h2 class="subtitle text-2xl font-extrabold tracking-tight">Tambien estoy en Instagram</h2>
+          <div class="slidePost">
+            <article class="contentVideosInstagram">
+              <a href="https://www.instagram.com/p/CqqzWpPuwZR/" target="_blank">
+                <figure class="containerImgInstagram">
+                    <img class="imgInstagram" src="./src/img/fb02.jpg" alt="">
+                    <div class="imgTextCTA">
+                      <h3>
+                        Esta es la portada de nuestro primer álbum VELASQUEZ BROS I <br>
+                        Que estará disponible el VIERNES 21 DE ABRIL en todas las plataformas, agradezco con profundo aprecio a todos los cantantes que participaron en esta producción.
+                      </h3>
+                    </div>
+                </figure>
+                <section class="containerIconsCommentsInstagram">
+                  <div class="contentIconsCommentsInstagram">
+                    <div class="iconsInstagram">
+                      <span>
+                        <svg aria-label="Me gusta" class="x1lliihq x1n2onr6" color="rgb(255, 48, 64)" fill="rgb(255, 48, 64)" height="24" role="img" viewBox="0 0 48 48" width="24"><title>Ya no me gusta</title><path d="M34.6 3.1c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5s1.1-.2 1.6-.5c1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z"></path></svg>
+                      </span>
+                      <span>
+                        <svg aria-label="Comentar" class="x1lliihq x1n2onr6" color="rgb(256, 256, 256)" fill="rgb(0, 0, 0)" height="24" role="img" viewBox="0 0 24 24" width="24"><title>Comentar</title><path d="M20.656 17.008a9.993 9.993 0 1 0-3.59 3.615L22 22Z" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2"></path></svg>
+                      </span>
+                      <span>
+                        <svg color="rgb(256, 256, 256)" width="24" height="24" viewBox="0 0 24 24">
+                          <line fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2" x1="22" x2="9.218" y1="3" y2="10.083"></line>
+                          <polygon fill="none" points="11.698 20.334 22 3.001 2 3.001 9.218 10.084 11.698 20.334" stroke="currentColor" stroke-linejoin="round" stroke-width="2"></polygon>
+                      </span>
+                    </div>
+                    <div class="commentsInstagram">
+                      <div class="textCommentsInstagram">
+                        <span>Les gusta a maikolceledon18 y 95 personas más</span>
+                        <p class="usernameInstagram">
+                          <span>arleyguerrero70</span>
+                          Que llegue ya el 21 🔥
+                        </p>
+                        <span class="iconLike">
+                          <svg aria-label="Me gusta" class="x1lliihq x1n2onr6" color="rgb(255, 48, 64)" fill="rgb(256, 256, 256)" height="12" role="img" viewBox="0 0 24 24" width="12"><title>Me gusta</title><path d="M16.792 3.904A4.989 4.989 0 0 1 21.5 9.122c0 3.072-2.652 4.959-5.197 7.222-2.512 2.243-3.865 3.469-4.303 3.752-.477-.309-2.143-1.823-4.303-3.752C5.141 14.072 2.5 12.167 2.5 9.122a4.989 4.989 0 0 1 4.708-5.218 4.21 4.21 0 0 1 3.675 1.941c.84 1.175.98 1.763 1.12 1.763s.278-.588 1.11-1.766a4.17 4.17 0 0 1 3.679-1.938m0-2a6.04 6.04 0 0 0-4.797 2.127 6.052 6.052 0 0 0-4.787-2.127A6.985 6.985 0 0 0 .5 9.122c0 3.61 2.55 5.827 5.015 7.97.283.246.569.494.853.747l1.027.918a44.998 44.998 0 0 0 3.518 3.018 2 2 0 0 0 2.174 0 45.263 45.263 0 0 0 3.626-3.115l.922-.824c.293-.26.59-.519.885-.774 2.334-2.025 4.98-4.32 4.98-7.94a6.985 6.985 0 0 0-6.708-7.218Z"></path></svg>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </a>
+            </article>
+            <article class="contentVideosInstagram">
+              <a href="https://www.instagram.com/p/CVOd3-DACxD/" target="_blank">
+                <figure class="containerImgInstagram">
+                    <img class="imgInstagram" src="./src/img/fb01.jpg" alt="">
+                    <div class="imgTextCTA">
+                      <h3>
+                        Agradezco profundamente el apoyo y respaldo de mi gente, agradezco el haber podido sumar otra participación en la categoría profesional del festival de la leyenda vallenata, no siendo más, les regalo mi solo 🔥🔥
+                      </h3>
+                    </div>
+                </figure>
+                <section class="containerIconsCommentsInstagram">
+                  <div class="contentIconsCommentsInstagram">
+                    <div class="iconsInstagram">
+                      <span>
+                        <svg aria-label="Me gusta" class="x1lliihq x1n2onr6" color="rgb(255, 48, 64)" fill="rgb(255, 48, 64)" height="24" role="img" viewBox="0 0 48 48" width="24"><title>Ya no me gusta</title><path d="M34.6 3.1c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5s1.1-.2 1.6-.5c1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z"></path></svg>
+                      </span>
+                      <span>
+                        <svg aria-label="Comentar" class="x1lliihq x1n2onr6" color="rgb(256, 256, 256)" fill="rgb(0, 0, 0)" height="24" role="img" viewBox="0 0 24 24" width="24"><title>Comentar</title><path d="M20.656 17.008a9.993 9.993 0 1 0-3.59 3.615L22 22Z" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2"></path></svg>
+                      </span>
+                      <span>
+                        <svg color="rgb(256, 256, 256)" width="24" height="24" viewBox="0 0 24 24">
+                          <line fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2" x1="22" x2="9.218" y1="3" y2="10.083"></line>
+                          <polygon fill="none" points="11.698 20.334 22 3.001 2 3.001 9.218 10.084 11.698 20.334" stroke="currentColor" stroke-linejoin="round" stroke-width="2"></polygon>
+                      </span>
+                    </div>
+                    <div class="commentsInstagram">
+                      <div class="textCommentsInstagram">
+                        <span>Más de 1240 reproducciones</span>
+                        <p class="usernameInstagram">
+                          <span>jenriquegonzalezg</span>
+                          El mejor cajero de ese festival, de lejos!!
+                        </p>
+                        <span class="iconLike">
+                          <svg aria-label="Me gusta" class="x1lliihq x1n2onr6" color="rgb(255, 48, 64)" fill="rgb(256, 256, 256)" height="12" role="img" viewBox="0 0 24 24" width="12"><title>Me gusta</title><path d="M16.792 3.904A4.989 4.989 0 0 1 21.5 9.122c0 3.072-2.652 4.959-5.197 7.222-2.512 2.243-3.865 3.469-4.303 3.752-.477-.309-2.143-1.823-4.303-3.752C5.141 14.072 2.5 12.167 2.5 9.122a4.989 4.989 0 0 1 4.708-5.218 4.21 4.21 0 0 1 3.675 1.941c.84 1.175.98 1.763 1.12 1.763s.278-.588 1.11-1.766a4.17 4.17 0 0 1 3.679-1.938m0-2a6.04 6.04 0 0 0-4.797 2.127 6.052 6.052 0 0 0-4.787-2.127A6.985 6.985 0 0 0 .5 9.122c0 3.61 2.55 5.827 5.015 7.97.283.246.569.494.853.747l1.027.918a44.998 44.998 0 0 0 3.518 3.018 2 2 0 0 0 2.174 0 45.263 45.263 0 0 0 3.626-3.115l.922-.824c.293-.26.59-.519.885-.774 2.334-2.025 4.98-4.32 4.98-7.94a6.985 6.985 0 0 0-6.708-7.218Z"></path></svg>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </a>
+            </article>
+            <article class="contentVideosInstagram">
+              <a href="https://www.instagram.com/p/CoX0Co2PtVW/" target="_blank">
+                <figure class="containerImgInstagram">
+                    <img class="imgInstagram" src="./src/img/fb03.jpg" alt="">
+                    <div class="imgTextCTA">
+                      <h3>
+                        🎸
+                      </h3>
+                    </div>
+                </figure>
+                <section class="containerIconsCommentsInstagram">
+                  <div class="contentIconsCommentsInstagram">
+                    <div class="iconsInstagram">
+                      <span>
+                        <svg aria-label="Me gusta" class="x1lliihq x1n2onr6" color="rgb(255, 48, 64)" fill="rgb(255, 48, 64)" height="24" role="img" viewBox="0 0 48 48" width="24"><title>Ya no me gusta</title><path d="M34.6 3.1c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5s1.1-.2 1.6-.5c1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z"></path></svg>
+                      </span>
+                      <span>
+                        <svg aria-label="Comentar" class="x1lliihq x1n2onr6" color="rgb(256, 256, 256)" fill="rgb(0, 0, 0)" height="24" role="img" viewBox="0 0 24 24" width="24"><title>Comentar</title><path d="M20.656 17.008a9.993 9.993 0 1 0-3.59 3.615L22 22Z" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2"></path></svg>
+                      </span>
+                      <span>
+                        <svg color="rgb(256, 256, 256)" width="24" height="24" viewBox="0 0 24 24">
+                          <line fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2" x1="22" x2="9.218" y1="3" y2="10.083"></line>
+                          <polygon fill="none" points="11.698 20.334 22 3.001 2 3.001 9.218 10.084 11.698 20.334" stroke="currentColor" stroke-linejoin="round" stroke-width="2"></polygon>
+                      </span>
+                    </div>
+                    <div class="commentsInstagram">
+                      <div class="textCommentsInstagram">
+                        <span>Les gusta a sebastian_diazbejarano y 111 personas</span>
+                        <p class="usernameInstagram">
+                          <span>talentos.g2012</span>
+                          👏👏👏👏
+                        </p>
+                        <span class="iconLike">
+                          <svg aria-label="Me gusta" class="x1lliihq x1n2onr6" color="rgb(255, 48, 64)" fill="rgb(256, 256, 256)" height="12" role="img" viewBox="0 0 24 24" width="12"><title>Me gusta</title><path d="M16.792 3.904A4.989 4.989 0 0 1 21.5 9.122c0 3.072-2.652 4.959-5.197 7.222-2.512 2.243-3.865 3.469-4.303 3.752-.477-.309-2.143-1.823-4.303-3.752C5.141 14.072 2.5 12.167 2.5 9.122a4.989 4.989 0 0 1 4.708-5.218 4.21 4.21 0 0 1 3.675 1.941c.84 1.175.98 1.763 1.12 1.763s.278-.588 1.11-1.766a4.17 4.17 0 0 1 3.679-1.938m0-2a6.04 6.04 0 0 0-4.797 2.127 6.052 6.052 0 0 0-4.787-2.127A6.985 6.985 0 0 0 .5 9.122c0 3.61 2.55 5.827 5.015 7.97.283.246.569.494.853.747l1.027.918a44.998 44.998 0 0 0 3.518 3.018 2 2 0 0 0 2.174 0 45.263 45.263 0 0 0 3.626-3.115l.922-.824c.293-.26.59-.519.885-.774 2.334-2.025 4.98-4.32 4.98-7.94a6.985 6.985 0 0 0-6.708-7.218Z"></path></svg>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </a>
+            </article>
+            <article class="contentVideosInstagram">
+              <a href="hhttps://www.instagram.com/p/Cbx1Lt5FI8m/" target="_blank">
+                <figure class="containerImgInstagram">
+                    <img class="imgInstagram" src="./src/img/fb04.jpg" alt="">
+                    <div class="imgTextCTA">
+                      <h3>
+                        #tbt 🎸
+                      </h3>
+                    </div>
+                </figure>
+                <section class="containerIconsCommentsInstagram">
+                  <div class="contentIconsCommentsInstagram">
+                    <div class="iconsInstagram">
+                      <span>
+                        <svg aria-label="Me gusta" class="x1lliihq x1n2onr6" color="rgb(255, 48, 64)" fill="rgb(255, 48, 64)" height="24" role="img" viewBox="0 0 48 48" width="24"><title>Ya no me gusta</title><path d="M34.6 3.1c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5s1.1-.2 1.6-.5c1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z"></path></svg>
+                      </span>
+                      <span>
+                        <svg aria-label="Comentar" class="x1lliihq x1n2onr6" color="rgb(256, 256, 256)" fill="rgb(0, 0, 0)" height="24" role="img" viewBox="0 0 24 24" width="24"><title>Comentar</title><path d="M20.656 17.008a9.993 9.993 0 1 0-3.59 3.615L22 22Z" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2"></path></svg>
+                      </span>
+                      <span>
+                        <svg color="rgb(256, 256, 256)" width="24" height="24" viewBox="0 0 24 24">
+                          <line fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2" x1="22" x2="9.218" y1="3" y2="10.083"></line>
+                          <polygon fill="none" points="11.698 20.334 22 3.001 2 3.001 9.218 10.084 11.698 20.334" stroke="currentColor" stroke-linejoin="round" stroke-width="2"></polygon>
+                      </span>
+                    </div>
+                    <div class="commentsInstagram">
+                      <div class="textCommentsInstagram">
+                        <span>Les gusta a sergioandres_vo y 147 personas</span>
+                        <p class="usernameInstagram">
+                          <span>_daviddaza</span>
+                          Mis hermanitos!! Que buen #TBT con la talentosa @anadelcastilloj 👏🏼🔥
+                        </p>
+                        <span class="iconLike">
+                          <svg aria-label="Me gusta" class="x1lliihq x1n2onr6" color="rgb(255, 48, 64)" fill="rgb(256, 256, 256)" height="12" role="img" viewBox="0 0 24 24" width="12"><title>Me gusta</title><path d="M16.792 3.904A4.989 4.989 0 0 1 21.5 9.122c0 3.072-2.652 4.959-5.197 7.222-2.512 2.243-3.865 3.469-4.303 3.752-.477-.309-2.143-1.823-4.303-3.752C5.141 14.072 2.5 12.167 2.5 9.122a4.989 4.989 0 0 1 4.708-5.218 4.21 4.21 0 0 1 3.675 1.941c.84 1.175.98 1.763 1.12 1.763s.278-.588 1.11-1.766a4.17 4.17 0 0 1 3.679-1.938m0-2a6.04 6.04 0 0 0-4.797 2.127 6.052 6.052 0 0 0-4.787-2.127A6.985 6.985 0 0 0 .5 9.122c0 3.61 2.55 5.827 5.015 7.97.283.246.569.494.853.747l1.027.918a44.998 44.998 0 0 0 3.518 3.018 2 2 0 0 0 2.174 0 45.263 45.263 0 0 0 3.626-3.115l.922-.824c.293-.26.59-.519.885-.774 2.334-2.025 4.98-4.32 4.98-7.94a6.985 6.985 0 0 0-6.708-7.218Z"></path></svg>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </a>
+            </article>
           </div>
         </div>
-
-        <main class="mt-0 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-8 lg:mt-20 lg:px-8 xl:mt-28">
-          <div class="sm:text-center lg:text-left">
-            <h1 class="text-4xl tracking-tight font-extrabold">
-              <span class="heroText block xl:inline">¡Hola👋 soy<br>
-                <a class="sm:text-5xl md:text-6xl" href="https://www.instagram.com/sebastian_velasquez0/" target="_blank">Sebastian Velasquez</a></span>
-            </h1>
-            <h2 class="titulo font-extrabold">Profesor de <span class="typed"></span></h2>
-            <p
-              class="descriptionText mt-3 text-base sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-              Como músico tengo más de 18 años de experiencia en escenarios en todo el país.<br>
-              He participando en 22 festivales en categorias infantil, juvenil, aficionado y profesional.</p>
-          </div>
-        </main>
       </div>
+    <div class="footer">
+        <div class="max-w-7xl mx-auto py-8 px-4 lg:flex lg:items-center lg:justify-between">
+        <h2 class="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+            <span class="contact block">Hablemos...</span>
+        </h2>
+        <div class="mt-8 flex lg:mt-0 lg:flex-shrink-0">
+            <figure class="px-2">
+                <a href="https://www.facebook.com/sebastianvelospina" target="_blank">
+                    <img width="40" src="./src/img/facebook.png" alt="">
+                </a>
+            </figure>
+            <figure class="px-2">
+                <a href="https://www.instagram.com/sebastian_velasquez0/" target="_blank">
+                    <img width="40" src="./src/img/instagram.png" alt="">
+                </a>
+            </figure>
+        </div>
+        </div>
     </div>
-    <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-      <img class="imageHero w-full object-cover"
-        src="./src/img/profile.jpg" alt="">
-    </div>
-  </div>
-  <div class="">
-    <div class="max-w-2xl mx-auto py-8 px-4 sm:py-16 sm:px-6 lg:max-w-7xl lg:px-8">
-      <h2 class="subtitle text-2xl font-extrabold tracking-tight">Te invito a ver mis últimos videos</h2>
-      <div class="mt-6 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8" id="content">
-        <!-- content -->
-      </div>
-    </div>
-  </div>
-  <div class="footer">
-    <div class="max-w-7xl mx-auto py-8 px-4 lg:flex lg:items-center lg:justify-between">
-      <h2 class="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-        <span class="contact block">Hablemos...</span>
-      </h2>
-      <div class="mt-8 flex lg:mt-0 lg:flex-shrink-0">
-        <figure class="px-2">
-            <a href="https://www.facebook.com/sebastianvelospina" target="_blank">
-                <img width="40" src="./src/img/facebook.png" alt="">
-            </a>
-        </figure>
-        <figure class="px-2">
-            <a href="https://www.instagram.com/sebastian_velasquez0/" target="_blank">
-                <img width="40" src="./src/img/instagram.png" alt="">
-            </a>
-        </figure>
-      </div>
-    </div>
-  </div>
 
 
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-  <script defer src="./src/assets/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script defer src="./src/assets/main.js"></script>
 </body>
 
 </html>
